@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <section>
+        <h2 style="color: #333;">About Me</h2>
+        <p>Hello! I'm Rudra Garg. This is my personal website hosted on Amazon S3.</p>
+    </section>
+
+    <section>
+        <h2 style="color: #333;">My Interests</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Cloud Computing</li>
+            <li>Astronomy</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 style="color: #333;">Contact Me</h2>
+        <p>Email: rudragarg09006@gmail.com</p>
+    </section>
+
+    <section>
+        <h2 style="color: #333;">Feedback</h2>
+        <p>We'd love to hear from you! <a href="{{ url_for('main.feedback') }}">Leave feedback</a></p>
+    </section>
+{% endblock %}
